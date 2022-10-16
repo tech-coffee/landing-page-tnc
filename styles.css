@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('./fonts/SFProDisplay-Black.woff') format('woff2'),
+    url('./fonts/SFProDisplay-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('./fonts/SFProDisplay-Light.woff2') format('woff2'),
+    url('./fonts/SFProDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('./fonts/SFProDisplay-Bold.woff2') format('woff2'),
+    url('./fonts/SFProDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('./fonts/SFProDisplay-Thin.woff2') format('woff2'),
+    url('./fonts/SFProDisplay-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: black;
+  margin: 0%;
+  color: white;
+  font-family: 'SFProDisplay';
+  font-style: normal;
+}
+
+.img {
+  margin: 0;
+}
+
+.content-wrapper {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  top: 0; /* this is required for "sticky" to work */
+  position: sticky;
+  height: 10vh;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.menu {
+  background: rgba(38, 38, 38, 0.35);
+  backdrop-filter: blur(14px);
+  border-radius: 3.1rem;
+  display: inline-flex;
+  position: absolute;
+  transform: translateX(-50%) translateY(0px) translateZ(0px);
+  bottom: 5rem;
+  left: 50%;
+  padding: 0.6rem;
+  align-items: center;
+  position: fixed;
+}
+
+.menu-item {
+  padding: 0 10px 0 10px;
+}
+
+p {
+  color: white;
+  font-family: 'SFProDisplay';
+  margin: 0rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+  margin: 0%;
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 0%;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-weight: 100;
+  color: #828282;
+  text-align: center;
+  letter-spacing: 0.16em;
+  font-size: 1.2rem;
+  margin: 0%;
+}
+
+.description-wrapper {
+  margin-top: 60vh;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.left-img-wrapper {
+  grid-column: 1;
+  grid-row: 1;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.left-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.right-img-wrapper {
+  grid-column: 2;
+  grid-row: 1;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.right-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.right-text-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.left-text-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.text {
+  font-family: 'SF Pro Display';
+  font-weight: 300;
+  font-size: 18px;
+  color: #828282;
+  margin-top: 1rem;
+}
