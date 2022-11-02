@@ -34,6 +34,10 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   margin: 0%;
@@ -90,6 +94,21 @@ body:after {
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+}
+
 .img {
   margin: 0;
 }
@@ -124,10 +143,20 @@ body:after {
   padding: 0 10px 0 10px;
 }
 
+.home {
+  position: absolute;
+  top: 0%;
+}
+
 p {
   color: white;
   font-family: 'SFProDisplay';
   margin: 0rem;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }
 
 .image-wrapper {
@@ -168,7 +197,7 @@ h2 {
 
 h4 {
   font-weight: 100;
-  color: #828282;
+  color: #c7c7c7;
   text-align: center;
   letter-spacing: 0.16em;
   font-size: 1.2rem;
@@ -176,14 +205,13 @@ h4 {
 }
 
 .description-wrapper {
-  margin-top: 60vh;
-  margin: 60vh 15% 0 15%;
+  margin: 70vh 15% 0 15%;
 }
 
 .description {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 5rem;
   row-gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -228,10 +256,11 @@ h4 {
 
 .text {
   font-family: 'SF Pro Display';
-  font-weight: 300;
-  font-size: 18px;
-  color: #828282;
+  font-weight: 100;
+  font-size: 1.4rem;
+  color: #bdbdbd;
   margin-top: 1rem;
+  letter-spacing: 0.05rem;
 }
 
 .ball {
